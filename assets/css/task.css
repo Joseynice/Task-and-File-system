@@ -1,0 +1,343 @@
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh; 
+    background-color:#f7f1f1;
+    background-image:#f8f1f1;
+    background-size: cover;
+    background-position: center;
+} 
+  li{
+   list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:#0f0d0d;
+    font-size: 1rem;
+}
+
+
+li, a:hover{
+    color: rgb(133, 13, 133);
+}
+ 
+/*-Header */
+header{
+    position: relative;
+    top: 0;
+    padding: 0 2rem;
+    z-index: 99;
+
+     
+}
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+.navbar .toggle_btn{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.sign_btn{
+    background-color: purple;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+.sign_btn:hover{
+    scale: 1.05;
+    color: #fff;
+}
+
+.sign_btn:active{
+    scale: 0.95;
+}
+/* Dropdouwn*/
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(24, 22, 22, 0.089);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown-menu.open{
+    height: 240px ;
+}
+
+.dropdown-menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown-menu li .sign_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/*task page */
+
+#task_page{
+    background-color: plum;
+    top: 20vh;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 25px;
+    height: 25vh;
+    width: 75vh;
+}
+.img-login{
+    width: 20px;
+    height: 30px;
+}
+
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+
+  .task-row{
+    margin-top: 50px;
+  }
+
+
+/*login form*/
+.wrapper{
+    position:relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgb(0, 0, 0, .5);
+    display: flex;
+    margin-left: 450px;
+    top: 10vh;
+    justify-content: center;
+    align-items: center;
+    transition: transform .5s ease .2s ease;
+
+}
+
+    
+    
+.wrapper.active{
+    height: 500px;
+}
+.wrapper .form-box.login{
+ transition: transform .18s ease;
+}
+.wrapper.active .form-box.login{
+    transition: none;
+    transform: translateX(-400px);
+}
+
+
+.wrapper.active .form-box.register{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper .form-box{
+    width: 100%;
+    padding: 40px;
+
+}
+
+.wrapper .icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background:  #590461;
+    font-size: 2em;
+    color: #fff;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+.form-box h2{
+    font-size: 2em;
+    color: #590461;
+    text-align: center;
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162348;
+    margin: 30px 0;
+
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #162348;
+    font-weight: 500;   
+    pointer-events: none;
+    transition: .5s;
+}
+.input-box input:focus~label ,
+.input-box input:valid~label{
+   top: -5px;
+}
+   
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #162348;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color:  #590461;
+    line-height: 57px;
+
+}
+.remember-forgot{
+    font-size: 1em;
+    color: #080808;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forgot label input{
+    accent-color: #161616;
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    color: #161616;
+    text-decoration: none;
+
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.btn-log{
+    width: 100%;
+    height: 45px;
+    background: #590461;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
+.btn-log:hover{
+    font-size: larger;
+}
+.login-register{
+    font-size: 1em;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.login-register p a{
+     color: #000105;
+     text-decoration: none;
+     margin-left: 10px;
+     font-weight: 600;
+}
+
+.login-register p a:hover{
+    text-decoration: underline;
+    color: #590461;
+}
+
+
+
+
+/* Media Queries */
+
+@media(max-width: 992px){
+    .navbar .links,
+    .navbar .sign_btn{
+      display: none;
+    }
+.navbar .toggle_btn{
+        display: block;
+        color: #000105;
+    }
+.dropdown-menu{
+    display: block;
+}
+    
+
+        
+
+
+}  
+
+@media(max-width: 576){
+    .dropdown-menu{
+        left: 2rem;
+        width: unset;
+    }
+}

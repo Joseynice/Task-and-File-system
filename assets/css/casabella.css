@@ -1,0 +1,198 @@
+/* Roboto regular */
+
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: url("/fonts/PlayfairDisplay-Regular.eot");
+    src: url("/fonts/PlayfairDisplay-Regular.eot?#iefix") format('embedded-opentype'),
+         url("/fonts/PlayfairDisplay-Regular.woff2") format('woff2'),
+         url("/fonts/PlayfairDisplay-Regular.woff") format('woff'),
+         url("/fonts/PlayfairDisplay-Regular.ttf") format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Roboto italic */
+
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: url('/fonts/PlayfairDisplay-Italic.eot');
+    src: url('/fonts/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/PlayfairDisplay-Italic.woff2') format('woff2'),
+         url('/fonts/PlayfairDisplay-Italic.woff') format('woff'),
+         url('/fonts/PlayfairDisplay-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Roboto bold */
+
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: url('/fonts/PlayfairDisplay-Bold.eot');
+    src: url('/fonts/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+         url('/fonts/PlayfairDisplay-Bold.woff') format('woff'),
+         url('/fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+/*For mobile view only*/
+body{
+    font-family: "PlayfairDisplay" !important;
+    font-weight: 400;
+    font-style: normal;
+}
+.navbar-nav > li >a{
+    font-family: "PlayfairDisplay" !important;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 14px !important;
+    color: dodgerblue !important;
+}
+nav{
+    background-color: white !important;
+    outline: none !important;
+        border: none !important;
+}
+.carousel-inner{
+        height: 400px !important;
+    }
+    .item, .item > img{
+        height: 100% !important;
+    }
+.navbar-nav > li > a:hover{ 
+   position: relative;
+    font-size: 14px !important;
+    transition: all ease 1.2s !important; 
+    color: darkslategray !important;
+}
+
+.navbar-brand >img[id= "img-logo"]{
+    width: 250px !important;
+    height: 100px;
+    margin-top: ;
+}
+.navbar{
+        min-height: 100px !important;
+    }
+    .navbar-brand{
+        padding: 0 15px !important;
+        height: 100px !important;
+        line-height: 100px !important;
+    }
+    .navbar-toggle{
+        margin-top: 30px !important;
+        padding: 9px 10px !important;
+    }
+.item active img{
+        height: 250px !important;
+    }
+.carousel-caption  h2{
+        color: white !important;
+    }
+    .carousel-caption  h1{
+        color: white !important;
+    }
+    .carousel-caption  h2:hover{
+        color: dodgerblue !important;
+    }
+    .carousel-caption  h1:hover{
+        color: dodgerblue !important;
+    }
+
+
+/*For Tablet or ipad view */
+@media only screen and (min-width: 768px){
+ 
+    
+    
+    
+    
+}
+
+/*For laptop view*/
+@media only screen and (min-width:1000px){
+ 
+    .navbar-nav > li{
+        height: 30px !important;
+        margin-top: 35px !important;
+    }
+    .navbar-nav > li >a, .fa{
+        height: 30px !important;
+        line-height: 0px !important;
+    }
+    nav{
+    background-color: transparent !important;
+        outline: none !important;
+        border: none !important;
+}
+    .navbar-fixed-top.scrolled{
+        background-color: steelblue !important;
+        transition: background-color 200ms linear;
+    }
+    .navbar{
+        min-height: 100px !important;
+    }
+    .navbar-brand{
+        padding: 0 15px !important;
+        height: 100px !important;
+        line-height: 100px !important;
+    }
+    .navbar-toggle{
+        margin-top: 30px !important;
+        padding: 9px 10px !important;
+    }
+    .carousel-inner{
+        height: 500px !important;
+    }
+    .item, .item > img{
+        height: 100% !important;
+    }
+    .navbar-nav > li >a{
+    font-family: "PlayfairDisplay" !important;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 14px !important;
+    color: white !important;
+}
+.navbar-nav > li > a:hover{
+    position: relative;
+    font-size: 14px !important;
+    transition: all ease 1.2s !important;
+    background-color: white !important; 
+    color: dodgerblue !important;
+}
+    .navbar-nav{
+      float: right !important;
+    }
+    .navbar-brand >img[id= "img-logo"]{
+        width: 250px !important;
+        height: 100px;
+        margin-left: 0px !important;
+    }
+    .item active img{
+        height: 400px !important;
+    }
+    #footer-links ul li a .fa{
+        display: inline-block;
+    }
+    .carousel-caption  h2{
+        color: white !important;
+    }
+    .carousel-caption  h1{
+        color: white !important;
+    }
+    .carousel-caption  h2:hover{
+        color: dodgerblue !important;
+    }
+    .carousel-caption  h1:hover{
+        color: dodgerblue !important;
+    }
+
+    h2{
+        font-weight: bolder !important;
+    }
+
+    
+    
+}

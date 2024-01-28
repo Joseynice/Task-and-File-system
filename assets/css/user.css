@@ -1,0 +1,73 @@
+
+    /*user dashboard*/
+    
+
+    .body_user{
+        height:100vh;
+        background-position:center;
+        background-size:cover;
+    
+    }
+#header-user{
+    background-color:#ad0c9f;
+    height: 8vh;
+    width: 101vw;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 50px;
+    color:#ffff;
+}
+
+
+
+#left-sidebar{
+    margin-top:30px;
+    width:16vw;
+    height:30vh;
+    
+}
+#left-sidebar table tr td{
+    font-size:18px;
+    background-color:antiquewhite;
+    text-decoration: none;
+}
+#left-sidebar table tr td a{
+    font-size:18px;
+    background-color:antiquewhite;
+    text-decoration: none;
+}
+
+ 
+#left-sidebar table tr td:hover{
+    background-color: rgb(131, 8, 125);
+    font-size:18px;
+    color: #ffff;
+}
+
+#left-sidebar table tr td a:hover{
+    background-color: rgb(131, 8, 125);
+    font-size:18px;
+    color: #ffff;
+}
+
+#right-sidebar{
+    padding: 35px;
+    height: 75vh;
+    width: 75vw;
+    display: inline-block;
+    color: #180a0a;;
+}
+
+/*
+#logout_link{
+    text-decoration: none;
+    color: rgb(116, 5, 116);
+}
+#logout_link:hover{ 
+    text-decoration: underline;
+    background-color: #1f071d;
+    color: #ffff;
+    
+}
+
+*/
